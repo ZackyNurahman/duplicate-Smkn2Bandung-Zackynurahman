@@ -1,0 +1,526 @@
+.tugas {
+    display: flex;
+    flex-direction: row;
+  
+}
+.section-content {
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 75%;
+    max-width: 500px;
+    margin-left: 65px;
+
+}
+
+.content-wrapper {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+
+.box {
+    width: 100%;
+    margin: 10;
+    padding: 10%;
+    border: 1px hidden;
+    position: relative;
+}
+
+
+.box-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(kotak.jpg) no-repeat center;
+    background-size: cover; 
+    width: 90%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+.first {
+    display: block;
+    position: relative;
+    max-width: 100%;
+}
+
+.second {
+    position: relative;
+    padding: 20px;
+    color:black ;
+    font-weight: 800;
+    margin-top: 60px;
+}
+
+
+.box-2 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+
+.box-2:hover {
+    background:  url(kotak.jpg) no-repeat center; 
+    transition: background 2s;
+}
+
+.box-2:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+
+
+.box-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(home.png) no-repeat center;
+    background-size: cover; 
+    width: 90%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+
+.box-3:hover {
+    background:  url(home.png) no-repeat center; 
+    transition: background 2s;
+}
+
+
+.box-3 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+
+.box-3:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.box-4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(auto.jpg) no-repeat center;
+    background-size: cover; 
+    width: 90%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+
+.box-4:hover {
+    background:  url(auto.jpg) no-repeat center; 
+    transition: background 2s;
+}
+
+
+.box-4 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+
+.box-4:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.box-5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(sensor.jpeg) no-repeat center;
+    background-size: cover; 
+    width: 90%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+
+.box-5:hover {
+    background:  url(sensor.jpeg) no-repeat center; 
+    transition: background 2s;
+}
+
+
+.box-5 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+
+.box-5:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+
+.box-6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(stecker.png) no-repeat center;
+    background-size: cover; 
+    width: 90%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+
+.box-6:hover {
+    background:  url(stecker.png) no-repeat center; 
+    transition: background 2s;
+}
+
+
+.box-6 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+
+.box-6:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+
+.box-7 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(pju.jpg) no-repeat center;
+    background-size: cover; 
+    width: 90%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+
+.box-7:hover {
+    background:  url(pju.jpg) no-repeat center; 
+    transition: background 2s;
+}
+
+
+.box-7 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+
+.box-7:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+
+.box-8 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(parking.jpg) no-repeat center;
+    background-size: cover; 
+    width: 90%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+
+.box-8:hover {
+    background:  url(parking.jpg) no-repeat center; 
+    transition: background 2s;
+}
+
+
+.box-8 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+
+.box-8:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.box-9 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(kit.jpg) no-repeat center;
+    background-size: cover; 
+    width: 90%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+
+.box-9:hover {
+    background:  url(kit.jpg) no-repeat center; 
+    transition: background 2s;
+}
+
+
+.box-9 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+
+.box-9:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.box-10 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(watering.jpg) no-repeat center;
+    background-size: cover; 
+    width: 90%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+
+.box-10:hover {
+    background:  url(watering.jpg) no-repeat center; 
+    transition: background 2s;
+}
+
+
+.box-10 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+
+.box-10:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.box-11 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(saga.jpg) no-repeat center;
+    background-size: cover; 
+    width: 90%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+
+.box-11:hover {
+    background:  url(saga.jpg) no-repeat center; 
+    transition: background 2s;
+}
+
+
+.box-11 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+
+.box-11:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.box-12 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(soil.png) no-repeat center;
+    background-size: cover; 
+    width: 90%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+
+.box-12:hover {
+    background:  url(soil.png) no-repeat center; 
+    transition: background 2s;
+}
+
+
+.box-12 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+
+.box-12:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.box-13 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(water.png) no-repeat center;
+    background-size: cover; 
+    width: 90%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+
+.box-13:hover {
+    background:  url(water.png) no-repeat center; 
+    transition: background 2s;
+}
+
+
+.box-13 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+
+.box-13:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.box-14 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(float.png) no-repeat center;
+    background-size: cover; 
+    width: 90%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+
+.box-14:hover {
+    background:  url(float.png) no-repeat center; 
+    transition: background 2s;
+}
+
+
+.box-14 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+
+.box-14:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.box-15 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(pump.png) no-repeat center;
+    background-size: cover; 
+    width: 90%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+
+.box-15:hover {
+    background:  url(pump.png) no-repeat center; 
+    transition: background 2s;
+}
+
+
+.box-15 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+
+.box-15:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.box-16 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(relay.png) no-repeat center;
+    background-size: cover; 
+    width: 90%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+
+.box-16:hover {
+    background:  url(relay.png) no-repeat center; 
+    transition: background 2s;
+}
+
+
+.box-16 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+
+.box-16:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.box-20 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(parking.jpg) no-repeat center;
+    background-size: cover; 
+    width: 79%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+
+.box-20:hover {
+    background:  url(parking.jpg) no-repeat center; 
+    transition: background 2s;
+}
+
+
+.box-20 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+
+.box-20:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+
+.box-21 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(saga.jpg) no-repeat center;
+    background-size: cover; 
+    width: 79%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+
+.box-21:hover {
+    background:  url(saga.jpg) no-repeat center; 
+    transition: background 2s;
+}
+
+
+.box-21 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+.box-23 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(relay.png) no-repeat center;
+    background-size: cover; 
+    width: 79%;
+    height: 300px;
+    border-radius: 0 0 10px 10px
+}
+
+
+.box-23:hover {
+    background:  url(relay.png) no-repeat center; 
+    transition: background 2s;
+}
+
+
+.box-23 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+
+.box-23:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
