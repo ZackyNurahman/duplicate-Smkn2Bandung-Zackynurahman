@@ -2,75 +2,35 @@ import logo1 from './kotak.jpg'
 import logo2 from './auto.jpg'
 import logo6 from './pju.jpg'
 import logo7 from './parking.jpg'
+import Float from './floatbut'
+import TekidoCard from './tekidocard'
 import {Link} from 'react-router-dom'
+import './cnt.css'
 
 const Content5 = () => {
     return ( 
         <>
-       <div className="flex justify-center mt-14  ml-12 overflow-x-hidden rounded-lg text-xl mb-10" role="group">
-          <button className="bg-blue-500 text-white hover:bg-blue-400 rounded-l-lg px-4 py-2 mx-0 outline-none focus:shadow-outline"><Link to={'/tekido'}>SEMUA PRODUCT</Link></button>
-          <button className="bg-blue-500 text-white hover:bg-blue-400  px-4 py-2 mx-0 outline-none focus:shadow-outline"><Link to={'/tekido1'}>IOT ALAT PERAGA</Link></button>
-          <button className="bg-blue-500 text-white hover:bg-blue-400  px-4 py-2 mx-0 outline-none focus:shadow-outline"><Link to={'/tekido2'}>IOT WORKSHOP KIT</Link></button>
-          <button className="bg-blue-500 text-white hover:bg-blue-400 rounded-r-lg px-4 py-2 mx-0 outline-none focus:shadow-outline"><Link to={'/tekido3'}>IOT STATER KIT</Link></button>
+     <div className="flex justify-center mt-14  ml-12 overflow-x-hidden rounded-lg text-xl mb-10" role="group">
+          <Link to={'/tekido'}><button className="px-4 py-2 text-lg font-medium text-gray-900 bg-transparent border-t border-b border-l border-gray-900 rounded-l-lg hover:bg-[#2E6695]  hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-[#2E6695]  focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">SEMUA PRODUCT</button></Link>
+          <Link to={'/tekido1'}> <button className="px-4 py-2 text-lg font-medium text-gray-900 bg-transparent border-t border-b border- border-gray-900 hover:bg-[#2E6695]  hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-[#2E6695]  focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">IOT ALAT PERAGA</button></Link>
+          <Link to={'/tekido2'}><button className="px-4 py-2 text-lg font-medium text-gray-900 bg-transparent border-t border-b border- border-gray-900 hover:bg-[#2E6695]  hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-[#2E6695]  focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">IOT WORKSHOP KIT</button></Link>
+          <Link to={'/tekido3'}><button className="px-4 py-2 text-lg font-medium text-gray-900 bg-transparent border-t border-b border-r border-gray-900 rounded-r-lg hover:bg-[#2E6695]  hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-[#2E6695]  focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">IOT STATER KIT</button></Link>
+</div>
+
+<div className='animate__animated animate__bounceInUp flex flex-col items-center'>
+<div className="tugas mt-7">
+<TekidoCard judul="SMART WATERING" kategori="IOT ALAT PERAGA" caption="ALAT PERAGA Smart System -Smart Watering 4.0" harga="Rp 6.883.387" foto="w-full rounded-l-lg box box-2" link="https://siplah.blibli.com/product/alat-peraga-smart-system-smart-watering-4-0/SLSK-0003-00027"/>
+<TekidoCard judul="HOME AUTO " kategori="IOT ALAT PERAGA" caption="Stater Kit - Homeauto Pushbutton 4.0 " harga="Rp 750.915" foto="w-full rounded-l-lg box box-4" link="https://siplah.blibli.com/product/stater-kit-homeauto-pushbutton-4-0/SLSK-0003-00009"/>
+
+        </div>
+        <div className="tugas mt-7">
+        <TekidoCard judul="SMART PJU" kategori="IOT ALAT PERAGA " caption="ALAT PERAGA Smart System - Smart PJU 4.0 Smart PJU (Penerangan Jalan Umum)" harga="Rp 6.883.387" foto="w-full rounded-l-lg box box-7" link="https://siplah.blibli.com/product/alat-peraga-smart-system-smart-pju-4-0/SLSK-0003-00022"/>
+        <TekidoCard judul="SMART PARKING" kategori="IOT ALAT PERAGA" caption="ALAT PERAGA Smart System - Parking System 4.0" harga="Rp 38.171.512" foto="w-full rounded-l-lg box box-8" link="https://siplah.blibli.com/product/alat-peraga-smart-system-smart-parking-4-0/SLSK-0003-00025"/>
+        </div>
         </div>
 
-      <div className="flex flex-row justify-center gap-7 animate__animated animate__bounceInUp ">
-      <div className="group relative flex justify-start h-[380px] w-[25%] flex-row bg-black">
-      <img alt="ganti1" id='ganti1' src={logo1} className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
-      <div className="relative p-4 sm:p-6 lg:p-8">
-        <p className="text-sm font-bold uppercase tracking-widest text-pink-500 ">
-         IOT ALAT PERAGA
-        </p>
-        <p className="text-xl font-bold text-white sm:text-2xl">SMART WATERING</p>
-        <div className="mt-32 sm:mt-48 lg:mt-64">
-          <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-          </div>
-        </div>
-          </div>
-        </div>
-        <div className="group relative flex justify-start h-[380px] w-[25%] mb-10  flex-row bg-black">
-      <img alt="ganti2" src={logo2} className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
-      <div className="relative p-4 sm:p-6 lg:p-8">
-        <p className="text-sm font-bold uppercase tracking-widest text-pink-500">
-        IOT ALAT PERAGA
-        </p>
-        <p className="text-xl font-bold text-white sm:text-2xl">HOME AUTO </p>
-        <div className="mt-32 sm:mt-48 lg:mt-64">
-          <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-          </div>
-        </div>
-          </div>
-    </div>
-    <div className="group relative flex justify-start h-[380px] w-[25%] mb-10  flex-row bg-black">
-      <img alt="ganti3" src={logo6} className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
-      <div className="relative p-4 sm:p-6 lg:p-8">
-        <p className="text-sm font-bold uppercase tracking-widest text-pink-500">
-          IOT ALAT PERAGA
-        </p>
-        <p className="text-xl font-bold text-white sm:text-2xl">SMART PJU</p>
-        <div className="mt-32 sm:mt-48 lg:mt-64">
-          <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-          </div>
-        </div>
-          </div>
-    </div>
-      </div>
-      <div className="flex flex-row ml-[161px] gap-7 animate__animated animate__bounceInUp w-[101%]  mb-12 ">
-      <div className="group relative flex justify-start h-[380px] w-[25%] flex-row bg-black">
-      <img alt="ganti1" id='ganti1' src={logo7} className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
-      <div className="relative p-4 sm:p-6 lg:p-8">
-        <p className="text-sm font-bold uppercase tracking-widest text-pink-500 ">
-        IOT ALAT PERAGA
-        </p>
-        <p className="text-xl font-bold text-white sm:text-2xl">SMART PARKING</p>
-        <div className="mt-32 sm:mt-48 lg:mt-64">
-          <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-          </div>
-        </div>
-          </div>
-        </div>
-        </div>
-      
+
+        <Float/>
       </>
      );
 }

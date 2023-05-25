@@ -1,7 +1,7 @@
 import logo2 from './roket.jpg'
 import 'animate.css';
-import logo3 from './visi.png'
-import logo4 from './misi.png'
+import logo3 from './time.png'
+import logo4 from './glo.png'
 
 const Content2 = () => {
     return ( 
@@ -19,40 +19,24 @@ const Content2 = () => {
             </div>
         </div>
 
-        <div className='text-center mr-4 mt-72 font-sans text-3xl font-bold animate__animated animate__bounceInDown animate__delay-2s'>
-            <h1>VISI AND MISI</h1>
+        <div className='text-center mt-60 font-sans text-3xl font-bold animate__animated animate__zoomIn animate__delay-2s'>
+            <h1>VISI DAN MISI</h1>
             </div>
-        <div className="container mx-auto px-20 ">
-        <div style={{backgroundColor: 'rgb(248, 250, 255)'}}>
-          <div className="md:mt-12 flex  flex-wrap blue-box relative text-lg pb-4" style={{cursor: 'auto'}}>
-            <blockquote className="w-1/2 sm:w-1/2 p-6 hover:border border-black shadow-xl animate__animated animate__backInLeft animate__delay-2s" style={{cursor: 'auto'}}>
-              <div className="mb-4"> 
-                <img src={logo3} alt="Company Logo" />
-              </div>
-              <p className="my-5"> 
-                <span className="text-primary-900">1.</span>Menjadi perusahaan penyedia sistem berbasis teknologi canggih yang dapat diandalkan.
-              </p>
-              <div className="flex items-center"> 
-                <div className="flex flex-col items-start"> 
-                </div>
-              </div>
-            </blockquote>
-            <blockquote className="w-1/2 m:w-1/2 p-6 hover:border border-black shadow-xl animate__animated animate__backInRight animate__delay-2s " style={{cursor: 'auto'}}>
-              <div className="mb-4 mt-1 ">  
-              <img src={logo4} className="h-[218px] w-[100%]" alt="Company Logo" />
-              </div>
-              <p className="mb-4"> 
-                <span className="text-primary-900">1.</span>Memberikan sistem yang cukup baik bagi pengguna untuk berhasil menjalankan misi mereka.</p>
-                <span className="text-primary-900 text-justify">2.</span>Menjadi wahana bagi penerapan kepakaran di bidang teknik secara professional untuk meningkatkan daya saing global dan kesejahteraan Bangsa Indonesia.
-             
-              <div className="flex items-center"> 
-                <div className="flex flex-col items-start">
-                </div>
-              </div>
-            </blockquote>
-          </div>
-        </div>
+            <div className='flex flex-row gap-8 justify-center mt-12 '>
+            <div className="block max-w-xl p-6 bg-white border animate__animated animate__backInLeft animate__delay-2s hover:border-green-600 border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <img src={logo3} className='h-12 mx-auto'/>
+        <h5 className="mt-4 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">VISI</h5>
+        <p className="font-normal mt-4 text-gray-700 dark:text-gray-400">Menjadi perusahaan penyedia sistem berbasis teknologi canggih yang dapat diandalka</p>
       </div>
+      <div className="block max-w-xl p-6 bg-white border animate__animated animate__backInRight animate__delay-2s hover:border-blue-600 border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+      <img src={logo4} className='h-12 mx-auto'/>
+        <h5 className="mt-4 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">MISI</h5>
+        <p className="font-normal mt-4 text-gray-700 dark:text-gray-400">1. Memberikan sistem yang cukup baik bagi pengguna untuk berhasil menjalankan misi mereka</p>
+        <p className="font-normal mt-4 text-gray-700 dark:text-gray-400">2. Menjadi wahana bagi penerapan kepakaran di bidang teknik secara professional untuk meningkatkan daya saing global dan kesejahteraan Bangsa Indonesia</p>
+      </div>
+      </div>
+       
+    
         </>
      );
 }

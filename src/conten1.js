@@ -4,9 +4,10 @@ import {Link} from 'react-router-dom'
 
 const Content1 = () => {
     return (  
-        <div className="mx-72 mt-24 my-8  flex gap-40">
-            <div className="gap-5 font-sans text-2xl font-bold w-96 text-justify  animate__animated animate__backInLeft animate__delay-1s">
-            <h1 className='mb-2'>ABOUT ME</h1>
+        <div className='mt-14'>
+        <div className="mx-72 mt-24 my-8  flex gap-40 ">
+            <div className="gap-5 mb-10 font-sans text-2xl font-bold w-96 text-justify  animate__animated animate__backInLeft animate__delay-1s">
+            <h1 className='mb-2'>TENTANG KAMI</h1>
             <div className="text-lg">
             <p>PT. Langgeng Sejahtera Kreasi Komputasi (PT.LSKK) merupakan perusahaan yang berkedudukan di Bandung yang didirikan pada tahun 2016. Berawal dari sebuah grup yang dimulai pada tahun 2008 sebagai subkontraktor Industri Pertahanan dan TI.</p>
             </div>  
@@ -17,6 +18,7 @@ const Content1 = () => {
             <div className="w-6/12 h-96 mx-11 my-11 animate__animated animate__backInRight animate__delay-1s">
                 <img src={logo2} />
             </div>
+        </div>
         </div>
     );
 }

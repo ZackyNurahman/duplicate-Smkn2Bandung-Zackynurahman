@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import {Link} from 'react-router-dom'
+import {Await, Link} from 'react-router-dom'
 import Footer from './footer'
 import Hero5 from "./hero5";
 
@@ -10,6 +10,11 @@ import Hero5 from "./hero5";
 
 export default function Kontakdata() {
 
+    const deletePost = async (key) => {
+        axios.delete(`http://localhost:80/api/crud/delete/${key}`);
+        getUsers();
+    }
+
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
@@ -18,11 +23,18 @@ export default function Kontakdata() {
     
     function getUsers() {
 
-        axios.get('http://localhost:80/lskk/users').then(function(responses) {
-            console.log(responses.data);
-            setUsers(responses.data);
+        axios.get('http://localhost:80/lskk/users').then(function(response) {
+            console.log(response.data);
+            setUsers(response.data);
         });
 
+    }
+
+    const deleteUser =(id) => {
+        axios.delete('http://localhost:80/users/${id}/delete').then(function(response){
+        console.log(response);
+        getUsers();
+        });
     }
     
     return (
@@ -51,6 +63,7 @@ export default function Kontakdata() {
                                 <td className="border h-12 border-black">{user.email}</td>
                                 <td className="border h-12 border-black">{user.option}</td>
                                 <td className="border h-12 border-black">{user.pesan}</td>
+                                
                             </tr>
 
                         )}

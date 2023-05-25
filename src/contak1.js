@@ -2,13 +2,15 @@ import './contact.css'
 import Lokasi from './local.png'
 import Email from './email.png'
 import Phone from './phone.png'
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios, { Axios } from "axios";
 import Swal from "sweetalert2";
 import logo2 from './peta.png'
 import {Link} from 'react-router-dom'
 
 const Contak1 = () => {
+
+    const refresh = () => window.location.reload(true)
     
     const [inputs, setInputs] = useState({})
 
@@ -23,24 +25,18 @@ const handleSubmit = (event) => {
     axios.post('http://localhost:80/lskk/user/save', inputs);
     console.log(inputs);
     
-
     
-    Swal.fire({
-        title: 'Success Submit',
-        text: 'terimakasih sudah membuat pesan',
-        imageUrl: 'https://unsplash.it/400/200',
-        imageWidth: 400,
-        imageHeight: 200,
-        imageAlt: 'Custom image',
-      })
-}
 
-function resetForm() {
-    document.getElementById("myForm").reset();
+   
+
+        
+
+
+
 }
     return ( 
         <>
-        <div className='mb-20 ml-20 animate__animated animate__lightSpeedInLeft animate__delay-1s'>
+        <div className='mb-20 ml-20 '>
         <div className='contact'>
         <div className='contact1'>
         <div className='contact2'>
@@ -69,8 +65,10 @@ function resetForm() {
         <div className='contact4'>
             <form onSubmit={handleSubmit}>
                 
+                <div className="flex">
                 <input required onChange={handleChange} name='nama_depan' id='input1' type='text' placeholder='Nama Depan'></input>
-                <input required onChange={handleChange} name='nama_belakang' id='input4' type='text' placeholder='Nama Belakang'></input>
+                <input required onChange={handleChange} name='nama_belakang' className='' id='input4' type='text' placeholder='Nama Belakang'></input>
+                </div>
                 
                 <div className='contact5'>
                 <input required onChange={handleChange} name='email' id='input2' type='text' placeholder='Email'></input>
@@ -87,7 +85,7 @@ function resetForm() {
                 </div>
                
                 <div className='items-end flex flex-col'>
-                <button onclick={resetForm} className=" my-3 bg-blue-500 hover:bg-blue-400 text-white font-bold text-lg py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded justify-end flex items-end">
+                <button  onClick={() => window.location.reload(true)} className=" my-3 bg-blue-500 hover:bg-blue-400 text-white font-bold text-lg py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded justify-end flex items-end">
                 SEND MESSAGE
                 </button> 
                 </div>   
